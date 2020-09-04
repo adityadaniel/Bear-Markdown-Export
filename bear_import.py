@@ -18,11 +18,11 @@ github/rovest, rorves@twitter
 * Or for import of nested groups and sheets from Ulysses, images and keywords included.
 '''
 
-my_sync_service = 'Dropbox'  # Change 'Dropbox' to 'Box', 'Onedrive',
+my_sync_service = 'Notes'  # Change 'Dropbox' to 'Box', 'Onedrive',
     # or whatever folder of sync service you need.
     # Your user "Home" folder is added below.
 
-use_filename_as_title = False  # Set to `True` if importing Simplenotes synced with nvALT.
+use_filename_as_title = True  # Set to `True` if importing Simplenotes synced with nvALT.
 set_logging_on = True
 
 # This tag is added for convenience (easy deletion of imported notes they are not wanted.)
@@ -45,7 +45,7 @@ HOME = os.getenv('HOME', '')
 
 # Import folder for files from other apps, 
 # or incoming emails via "Gmail to Dropbox" Zapier zap or IFTTT
-bear_import = os.path.join(HOME, my_sync_service, 'BearImport')
+bear_import = os.path.join(HOME, my_sync_service, 'Bear')
 import_path = os.path.join(bear_import, 'input')
 import_done = os.path.join(bear_import, 'done')
 
